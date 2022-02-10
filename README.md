@@ -1,27 +1,8 @@
-# Clientform
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Simple Weather Website using Angular and Spring Boot framework  
+The website is generated using Spring Boot framework as backend REST server and Angular framework as frontend rendering. The weather information is fetched using openweather api.  
+  
+## How it works
+The front end webpage will be rendered using Angular which is basically a simple form. After the user finished adding in the cities, the user selection will appear below as link to another detail page. The link request will be sent to the back end server written using Spring Boot framework. The server (which stores the openweather api key) will process the request and sent the response in Json format to angular so that the result will be displayed.  
+  
+## How to Run  
+The angular files are already built using `ng build` and placed in the static folder of Spring Boot directory to be served as a Single Page Application. To run, use `mvn spring-boot:run` to start Spring Boot application.

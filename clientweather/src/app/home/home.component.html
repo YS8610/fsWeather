@@ -1,0 +1,15 @@
+<div class="container" fxFlex="400px">
+  <div fxLayout="row" fxLayout="row" fxLayoutAlign="space-between center">
+    <form (ngSubmit)="onSubmit()" [formGroup]="cityForm">
+      <label for="city">City: </label>
+      <input type="text" name="city" formControlName="city">
+      <button type="submit">Get</button>
+    </form>
+  </div>
+  <hr>
+  <div fxLayout="row" fxLayoutAlign="start center" *ngFor="let c of listofcity" style="border: solid;">
+    <!-- <div > <a [routerLink]="c.api+'/'+c.city">{{c.city}}</a> </div> -->
+    <div > <a [routerLink]="[c]">{{c}}</a> </div>
+  </div>
+</div>
+
